@@ -7,16 +7,16 @@ function handleSubmit(event) {
   var input = document.querySelector('.search-input');
   var id = input.value.trim().toLowerCase();
   if (id == "jedi princess chelsea") {
-    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/jediprincesschelsea.html';
+    var url = 'mybadges.vercel.app/badges/jediprincesschelsea.html';
   }
   else if (id == "random mortis") {
-    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/randommortis.html';
+    var url = 'mybadges.vercel.app/badges/randommortis.html';
   }
   else if (id == "pepsi.<3") {
-    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/pepsi.html';
+    var url = 'mybadges.vercel.app/badges/pepsi.html';
   }
   else{
-    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/' + id + '.html';
+    var url = 'mybadges.vercel.app/badges/' + id + '.html';
   }
   
   // check if the code is in the usedCodes array
