@@ -1,12 +1,23 @@
 var usedCodes = [
-  "example", "finlay", "hayes", "aspect", "bhavesh", "death", "bunny", "far", "jedi princess chelsea", "melo", "minions", "nnn", "random mortis", "samriddhi", "shivnotech", "unimmortalpanda", "zain", "grxim", "nxtviv", "pepsi", "rishii", "marv", "mjrn"
+  "example", "finlay", "hayes", "aspect", "bhavesh", "death", "bunny", "far", "jedi princess chelsea", "jediprincesschelsea", "melo", "minions", "nnn", "random mortis", "randommortis", "samriddhi", "shivnotech", "unimmortalpanda", "zain", "grxim", "nxtviv", "pepsi", "pepsi.<3", "rishii", "marv", "mjrn"
 ];
 
 function handleSubmit(event) {
   event.preventDefault();
   var input = document.querySelector('.search-input');
   var id = input.value.trim().toLowerCase();
-  var url = 'https://mybadges.vercel.app/badges/' + id + '.html';
+  if (id == "jedi princess chelsea") {
+    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/jediprincesschelsea.html';
+  }
+  else if (id == "random mortis") {
+    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/randommortis.html';
+  }
+  else if (id == "pepsi.<3") {
+    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/pepsi.html';
+  }
+  else{
+    var url = 'file:///C:/Users/finla/OneDrive/Documents/Code/ID/badges/' + id + '.html';
+  }
   
   // check if the code is in the usedCodes array
   if (usedCodes.includes(id)) {
